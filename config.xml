@@ -7,7 +7,7 @@
     <author email="gareth_klyszejko@yahoo.com" href="http://phonegap.com">
         Gareth Klyszejko
     </author>
-    <icon src="dog3.png" />
+    <icon src="dog3.jpg" />
     <content src="index.html" />
     <access origin="*" />
 </widget>
