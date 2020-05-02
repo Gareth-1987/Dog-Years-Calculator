@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dog Year Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script>
+            window.onload=function()
+            {
+                document.getElementById('btnCalc').addEventListener('click', calcAge);
+            }
+            function calcAge(e)
+            {
+                var age = document.getElementById('dogAge').value;
+                age = age*7;
+                var result = " ...In dog years, your dog is " + age + " years old, WOW!!!";
+                document.getElementById('result').innerHTML=result;
+                
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <div style="text-align:center">
+            <h1>Dog Year Calculator:</h1>
+        </div>
+        <label for="dogAge">Your dog's age in human years: (Type below and push calculate)
+        </label>
+        <input id="dogAge" type="number" /> 
+        <button class="ui-btn" id="btnCalc">Calculate</button>
+        <img class="thumbnail" src="dog3.jpg">
+        <div id="result" + class="text"></div>
+       
+        
+        <div data-role="footer" style="text-align:center" data-theme="a" data-position="fixed">
+            <p>GKDesigns &copy; 2020</p>
+        </div>
+    </body>
+</html>
